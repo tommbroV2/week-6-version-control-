@@ -10,3 +10,15 @@ def test_printbook_reference():
     reference = book.get_reference().replace("PrintedBook: ", "")
 
     assert reference == "Gamma,r., Helm,i., Johnson,a. and Vlissides,o. (1994) Design Patterns. United States:Pearson Education"
+
+    class PrintedBook:
+       
+     def __init__(self, authors, title, year, country, publisher):
+        self.authors = authors
+        self.title = title
+        self.year = year
+        self.country = country
+        self.publisher = publisher
+
+def get_reference(self):
+        return "some formatted string"
